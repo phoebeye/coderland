@@ -5,6 +5,8 @@ var boot = require('loopback-boot');
 
 var app = module.exports = loopback();
 
+var cool = require('cool-ascii-faces');
+
 app.start = function() {
   // start the web server
   return app.listen(function() {
@@ -17,6 +19,10 @@ app.start = function() {
     }
   });
 };
+
+app.get('/cool', function(request, response) {
+  response.send(cool());
+});
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
