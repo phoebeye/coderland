@@ -6,6 +6,7 @@ var boot = require('loopback-boot');
 var app = module.exports = loopback();
 
 var cool = require('cool-ascii-faces');
+var pg = require('pg');
 
 app.start = function() {
   // start the web server

@@ -1,0 +1,26 @@
+{
+  "name": "Puser",
+  "idInjection":false,
+  "options":{
+    "postgresql":{
+      "schema":"public",
+      "table":"users"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true,
+      "postgresql":{
+        "columnName": "id"
+      }
+    },
+    "userName": {
+      "type": "string",
+      "required": true,
+      "postgresql": {
+        "columnName": "user_name"
+      }
+    }
+  }
+}
