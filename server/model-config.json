@@ -39,7 +39,7 @@
     "dataSource": "db"
   },
   "Puser": {
-    "dataSource":"postgresql",
+    "dataSource":"postgres",
     "public":true
   }
 }
