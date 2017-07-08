@@ -21,6 +21,10 @@ app.start = function() {
   });
 };
 
+app.get('/', function(request, response) {
+  response.send('Hello, Phoebe Maio!');
+})
+
 app.get('/cool', function(request, response) {
   response.send(cool());
 });
